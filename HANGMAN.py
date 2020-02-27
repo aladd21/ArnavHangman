@@ -1,5 +1,5 @@
 from __future__ import print_function
-updatedSpaces=['-','-','-','-','-']
+updatedSpaces=[]
 word='steve'
 lives=5
 def initialize():
@@ -22,13 +22,12 @@ def won():
 def main():
     initialize()
     getLetter()                
-
+    won()
                      
 def check(letter):
     global lives
     global updatedSpaces
     global word
-    global letter
     if letter in word:
         for i in range(0,len(word)-1):
             Hamza=word.find(letter, i, len(word))
